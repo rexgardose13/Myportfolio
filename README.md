@@ -31,7 +31,7 @@ https://YOUR-USERNAME.github.io/
 
 ## Contact
 
-Email: YOUR-EMAIL@example.com
+Email: gardose2@gmail.com
 
 GitHub: https://github.com/YOUR-USERNAME
 
