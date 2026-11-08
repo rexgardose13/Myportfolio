@@ -4,150 +4,385 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rex | System & Network Engineer, IT Specialist, Linux Engineer</title>
+
+  <meta name="description"
+    content="Portfolio of Rex Gerafusco Gardose, Information Technology graduate and aspiring web developer.">
+
+  <meta name="author" content="Rex Gerafusco Gardose">
+
+  <title>Rex Gerafusco Gardose | IT Graduate & System & Network Engineer, IT Specialist, Linux Engineer</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <a href="#" class="logo">MyPortfolio.</a>
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Rex<span>.</span></a>
+
       <div class="nav-links">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
+
+      <a href="assets/resume.pdf" class="nav-button"
+         target="_blank" rel="noopener">
+        My Resume
+      </a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="intro">HELLO, I'M</p>
-      <h1>Rex</h1>
-      <h2>System & Network Engineer, IT Specialist, Linux Engineer</h2>
-      <p>
-        Professional Experience
-2014 – 2024 | 10 Years of Experience
 
-System & Network Engineer | IT Specialist | Linux Engineer
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
 
-Professional Responsibilities
-1. System Administration
+        <div class="hero-text">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-Installed, configured, and maintained Linux and Windows servers.
-Managed server infrastructure, system performance, and availability.
-Performed system upgrades, patching, and security updates.
-Managed user accounts, permissions, and access controls.
-Monitored system health and resolved technical issues.
-Managed backup, recovery, and disaster recovery procedures.
-2. Linux Engineering
-Administered Linux distributions, including Ubuntu, Debian, CentOS, and Red Hat.
-Managed Linux servers and services.
-Used Bash and Shell scripting for automation.
-Configured SSH, cron jobs, systemd, and file permissions.
-Managed software packages and repositories.
-Troubleshot Linux kernel, network, and system performance issues.
-3. Network Engineering
-Configured and maintained LAN, WAN, and WLAN infrastructure.
-Managed routers, switches, firewalls, and network devices.
-Configured TCP/IP, DNS, DHCP, VLANs, and VPNs.
-Monitored network performance and connectivity.
-Diagnosed and resolved network outages and connectivity problems.
-Implemented network security and access control policies.
-4. IT Support & Infrastructure
-Provided technical support for hardware, software, and network issues.
-Installed and maintained desktops, laptops, printers, and peripherals.
-Managed IT infrastructure and enterprise applications.
-Troubleshot hardware, operating systems, and software problems.
-Supported employees and end users.
-Maintained IT documentation and technical procedures.
-5. Security & Maintenance
-Implemented server and network security practices.
-Managed firewall rules and access permissions.
-Performed vulnerability assessments and security updates.
-Monitored logs and investigated system incidents.
-Maintained backup systems and data protection procedures.
-      </p>
+          <h1>
+            Hi, I'm <span>Rex Gerafusco Gardose</span>
+          </h1>
 
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="assets/resume.pdf" class="btn secondary"
-         target="_blank">Download Resume</a>
-    </section>
+          <h2>Information Technology Graduate</h2>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I have been fortunate to work on projects that require the integration of emerging technologies like AI and cloud computing.
-This experience has helped me hone my skills in building scalable, secure infrastructure.
-My ability to translate business requirements into technical solutions has been instrumental in driving innovation. 
-I have also contributed to operational efficiency in various IT roles.
-My ambition is to lead initiatives that not only optimize IT systems but also empower organizations to use data responsibly and ethically.
-Organizations use data responsibly and ethically. 
-I am passionate about exploring new frontiers, such as cybersecurity and data analytics, to create robust, future-proof IT ecosystems.
-My strengths lie in my analytical mindset, problem-solving abilities, and a strong commitment to continuous learning.
+          <p class="hero-description">
+            An aspiring IT professional passionate about
+            System & Network Engineer, IT Specialist, Linux Engineer, technology, and creating
+            meaningful digital experiences.
+          </p>
 
-      </p>
-    </section>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">
+              Explore My Projects
+            </a>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript (Learning)</span>
-        <span>Python (Learning)</span>
-        <span>Git & GitHub</span>
+            <a href="assets/Mynewresume.pdf"
+               class="btn outline-btn"
+               target="_blank" rel="noopener">
+              Download CV ↓
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://rexgardose13.github.io/Myportfolio"
+               target="_blank" rel="noopener">
+              GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/rexgardose13/"
+               target="_blank" rel="noopener">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-border">
+            <img src="assets/profile.jpg"
+                 alt="Portrait of Rex Gerafusco Gardose">
+          </div>
+          <div class="image-decoration"></div>
+        </div>
+
       </div>
     </section>
 
-    <section id="projects">
-      <h2>My Projects</h2>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
 
-      <article class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-          A responsive portfolio website created using
-          HTML and CSS to showcase my skills and projects.
+        <p class="section-label">GET TO KNOW ME</p>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <div>
+            <h3>Passionate About Technology and Development</h3>
+
+            <p>
+              Hello! I'm Rex Gerafusco Gardose, a graduate
+              with a Bachelor's Degree in Information Technology.
+            </p>
+
+            <p>
+              I am interested in web development and
+              technology. I enjoy learning new tools,
+              exploring creative solutions, and developing
+              websites that provide useful experiences.
+            </p>
+
+            <p>
+              My goal is to continue improving my technical
+              abilities, gain professional experience, and
+              contribute to meaningful IT projects.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="info-item">
+              <span>Full Name</span>
+              <strong>Rex Gerafusco Gardose</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Degree</span>
+              <strong>Bachelor's in Information Technology</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Career Interest</span>
+              <strong>Web Development</strong>
+            </div>
+
+            <div class="info-item">
+              <span>Status</span>
+              <strong>Recent Graduate</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section dark-section">
+      <div class="container">
+
+        <p class="section-label">WHAT I CAN DO</p>
+        <h2 class="section-title">Technical Skills</h2>
+
+        <p class="section-description">
+          Technologies and tools I am learning and developing
+          my experience with.
         </p>
-        <a href="https://github.com/YOUR-USERNAME"
-           target="_blank">View on GitHub →</a>
-      </article>
 
-      <article class="project">
-        <h3>My Portfolio</h3>
-        <p>
-          Add a description of one of your university
-          assignments or personal projects here.
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">01</div>
+            <h3>HTML5</h3>
+            <p>Creating structured and accessible web pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">02</div>
+            <h3>CSS3</h3>
+            <p>Designing responsive and attractive interfaces.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">03</div>
+            <h3>JavaScript</h3>
+            <p>Learning interactive web development.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">04</div>
+            <h3>Git & GitHub</h3>
+            <p>Managing source code and project repositories.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">05</div>
+            <h3>Web Design</h3>
+            <p>Exploring layouts, usability, and user experience.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">06</div>
+            <h3>IT Fundamentals</h3>
+            <p>Applying foundational information technology knowledge.</p>
+          </div>
+
+        </div>
+
+        <p class="skills-note">
+          Note: Update this list to reflect the technologies
+          you can confidently use.
         </p>
-        <a href="https://rexgardose13.github.io/Myportfolio/"
-           target="_blank">View Project →</a>
-      </article>
+
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <h3>University of Mindanao</h3>
-      <p>Bachelor's Degree in Information Technology</p>
-      <p>Expected Graduation: 2010</p>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+
+        <p class="section-label">MY WORK</p>
+        <h2 class="section-title">System & Network Engineer | IT Specialist | Linux Engineer</h2>
+
+        <p class="section-description">
+          A selection of my web development and personal projects.
+        </p>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-visual visual-one">
+              <span>WEB DEVELOPMENT</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT 01</p>
+              <h3>Personal Portfolio Website</h3>
+
+              <p>
+                A responsive personal website designed to
+                showcase my background, technical skills,
+                projects, and professional information.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GitHub Pages</span>
+              </div>
+
+              <a href="https://rexgardose13.github.io/Myportfolio"
+                 target="_blank" rel="noopener"
+                 class="project-link">
+                View Project →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-two">
+              <span>WEB APPLICATION</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT 02</p>
+              <h3>Student Management System</h3>
+
+              <p>
+                Add a description of your student management
+                project, its purpose, features, and technologies.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>YOUR TECHNOLOGY</span>
+              </div>
+
+              <a href="https://rexgardose13.github.io/Myportfolio"
+                 target="_blank" rel="noopener"
+                 class="project-link">
+                View Project →
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-three">
+              <span>PERSONAL PROJECT</span>
+            </div>
+
+            <div class="project-info">
+              <p class="project-category">PROJECT 03</p>
+              <h3>Web Development Project</h3>
+
+              <p>
+                Showcase another website or application
+                you developed during your studies or
+                personal learning journey.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>YOUR TECHNOLOGY</span>
+              </div>
+
+              <a href="https://rexgardose13.github.io/Myportfolio"
+                 target="_blank" rel="noopener"
+                 class="project-link">
+                View Project →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: gardose2@gmail.com</p>
-      <p>
-        <a href="https://rexgardose13.github.io/Myportfolio/">GitHub</a>
-        |
-        <a href="https://www.linkedin.com/in/rexgardose13">LinkedIn</a>
-        |
-        <a href="http://wa.me/639277611359">Whatsapp</a>
-      </p>
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section dark-section">
+      <div class="container">
+
+        <p class="section-label">MY BACKGROUND</p>
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+          <div class="education-year">Recent Graduated</div>
+
+          <h3>Bachelor's Degree in Information Technology</h3>
+
+          <p class="university">
+            University of Mindanao 
+          </p>
+
+          <p>
+            Graduation Year: 2010
+          </p>
+
+          <p>
+            Add relevant coursework, academic achievements,
+            or certifications here.
+          </p>
+        </div>
+
+      </div>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-content">
+
+        <p class="section-label">LET'S CONNECT</p>
+        <h2 class="section-title">Get In Touch</h2>
+
+        <p>
+          I am interested in opportunities where I can
+          learn, grow, and contribute my skills in
+          information technology and web development.
+        </p>
+
+        <a href="mailto:gardose2@gmail.com"
+           class="btn primary-btn">
+          Contact Me
+        </a>
+
+        <div class="contact-links">
+          <a href="https://rexgardose13.github.io/Myportfolio/"
+             target="_blank" rel="noopener">GitHub</a>
+
+          <a href="https://www.linkedin.com/in/rexgardose13"
+             target="_blank" rel="noopener">LinkedIn</a>
+
+          <a href="http://wa.me/639277611359"
+             target="_blank" rel="noopener">whatsapp</a>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      © 2026 Rex Gerafusco Gardose.
+      Built with HTML & CSS.
+    </p>
   </footer>
 
 </body>
