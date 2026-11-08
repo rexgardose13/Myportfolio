@@ -1,1 +1,37 @@
-<h1>Hi, I'm Rex! <br/><a href="https://github.com/rexbernard13/github-portfolio">System & Network Engineer | IT Specialist | Linux Engineer</a>, <a href="https://www.linkedin.com/in/rexgardose13/">linkedin</a>, <a href="https://www.facebook.com/rexgardose13">Facebook</a>, <a href="http://wa.me/639277611359">Whattsapp</a>, <a href="https://teams.live.com/v2/rex.gardose0218@gmail.com">Teams</a></h1>
+
+# Rex Gerafusco Gardose - Portfolio
+
+Welcome to my personal portfolio website!
+
+## About Me
+
+I am a graduate with a Bachelor's Degree in
+Information Technology, interested in web development
+and technology.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Git
+- GitHub Pages
+
+## Portfolio Sections
+
+- Home
+- About Me
+- Technical Skills
+- Projects
+- Education
+- Contact
+
+## Website
+
+https://YOUR-USERNAME.github.io/
+
+## Contact
+
+Email: YOUR-EMAIL@example.com
+
+GitHub: https://github.com/YOUR-USERNAME
+
