@@ -1,2 +1,1 @@
-# Rex Gerafusco Gardose
-System &amp; Network Engineer | IT Specialist | Linux Engineer
+<h1>Hi, I'm Rex! <br/><a href="https://github.com/rexbernard13/github-portfolio">System & Network Engineer | IT Specialist | Linux Engineer</a>, <a href="https://www.linkedin.com/in/rexgardose13/">linkedin</a>, <a href="https://www.facebook.com/rexgardose13">Facebook<a href="http://wa.me/639277611359">Whattsapp</a>, <a href="https://teams.live.com/v2/rex.gardose0218@gmail.com">Teams</a></h1>
