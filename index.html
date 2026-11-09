@@ -267,11 +267,102 @@
 
             <div class="project-info">
               <p class="project-category">PROJECT 02</p>
-              <h3>Student Management System</h3>
+              <h3>Installing VICIdial on a Hostinger VPS</h3>
 
               <p>
-                Add a description of your student management
-                project, its purpose, features, and technologies.
+                VICIdial installation on Hostinger KVM 2
+                Your setup is suitable for a small VICIdial deployment, provided you confirm the VPS resources and call capacity.Your installation configuration
+                VPS Hostinger KVM 2
+                Current OS Ubuntu 24.04
+                Agents 5–10
+                Calling Inbound + outbound
+                Installation Fresh server
+                Recommended approach
+                Install VICIdial using ViciBox rather than trying to install the entire VICIdial stack directly on Ubuntu 24.04.
+                Important: Do not run random VICIdial installation scripts on your Ubuntu server. VICIdial has specific operating-system and dependency requirements. ViciBox provides a more consistent installation environment.
+                1. Important Hostinger limitation
+                I checked Hostinger's current documentation. There is an important issue:
+                Installation blocker
+                Hostinger does not currently allow customers to upload their own operating-system images to its VPS platform. 
+                Hostinger
+                +1
+               This means you cannot simply mount the official ViciBox ISO and boot your KVM 2 VPS from it.
+               The official ViciBox stable release is version 12.0.2. It installs the complete OpenSUSE-based VICIdial environment. 
+               ViciBox
+               +1
+               My recommendation: Don't erase Ubuntu or attempt an improvised installation yet. First, decide whether to keep Hostinger or move to a VPS provider that supports custom ISO installation.
+               2. Recommended architecture
+               For your 5–10 agents, use a single-server VICIdial installation.
+               VICIdial single-server architecture
+               Agents (5–10)
+               Browser-based agent interface
+               VICIdial web server
+               Agent interface and administration
+               MariaDB database
+               Campaigns, users, calls and reports
+               Asterisk telephony server
+               Inbound calls, outbound calls and recordings
+               SIP Trunk Provider
+               Telephone network connectivity
+               The official ViciBox Express installation puts all three server roles on one machine and is intended for contact centers with fewer than 20 agents. 
+               ViciBox 12.0 documentation
+               3. Installation procedure if you use a compatible VPS
+               Once you have a server that supports ViciBox ISO booting, follow these steps.
+               Step 1 – Download ViciBox
+               Official download:
+               Download ViciBox installation ISO 
+               Choose:
+               ViciBox_V12.x86_64-12.0.2.iso
+               Step 2 – Install the operating system
+               Attach the ISO to your VPS.
+               Boot into the ISO.
+               Select Install ViciBox Server.
+               Configure your timezone, hostname, network and root password.
+               Complete the installation and reboot.
+               Step 3 – Install VICIdial
+               Log in through SSH as root and run:
+               bash
+               vicibox-express
+               Confirm the installation when prompted.
+               After installation:
+               bash
+               reboot
+               Step 4 – Verify services
+               After reboot, connect through SSH:
+               bash
+               screen -ls
+               Then check Asterisk:
+               bash
+               asterisk -r
+               Type quit to exit the Asterisk console.
+               Step 5 – Access VICIdial
+              Open:
+              text
+              http://YOUR_SERVER_IP/vicidial/admin.php
+              The initial administrator credentials documented by ViciBox are:
+              text
+            Username: 6666
+            Password: 1234
+           Change the default password immediately. 
+           ViciBox 12.0 documentation
+            Step 6 – Configure your call center
+             Inside VICIdial, configure:
+            Admin users and agent accounts.
+            Inbound and outbound campaigns.
+            SIP trunk provider.
+            Inbound DID routing.
+            Outbound caller ID.
+            Agent extensions and softphones.
+            Call recording.
+            Timezones and dialing permissions.
+            Step 7 – Test calling
+            Test the following before allowing agents to work:
+            Inbound calls reach the correct campaign.
+            Agents can answer calls.
+            Outbound calls connect successfully.
+            Two-way audio works.
+            Recordings are saved.
+            Call reports are generated.
               </p>
 
               <div class="project-tags">
