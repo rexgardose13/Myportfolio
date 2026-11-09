@@ -363,6 +363,107 @@
             Two-way audio works.
             Recordings are saved.
             Call reports are generated.
+            Manual VICIdial installation on Hostinger KVM 2
+We'll keep your existing Hostinger VPS and investigate a manual installation.
+One important technical issue: VICIdial wasn't designed as a standard Ubuntu 24.04 application. Its installation process depends on particular versions of Asterisk, PHP, database components, web-server configuration and operating-system packages.
+For that reason, I recommend a controlled installation rather than running an all-in-one installation script that could leave your VPS in an inconsistent state.
+Our target architecture is:
+Hostinger KVM 2 – Ubuntu 24.04.
+VICIdial – call center management.
+Asterisk – telephony engine.
+MariaDB – database.
+Apache/PHP – web interface.
+5–10 agents.
+Inbound and outbound calling through an authorized SIP trunk.
+1. Before installing anything
+First, connect to your VPS using SSH.
+From Windows, you can use PowerShell:
+bash
+ssh root@YOUR_SERVER_IP
+Check the server specifications:
+bash
+cat /etc/os-release
+bash
+nproc
+free -h
+df -h
+Check your public IP:
+bash
+curl -4 https://icanhazip.com
+Check whether anything is already listening on important ports:
+bash
+ss -tulpn
+Do not install Asterisk, MariaDB or VICIdial yet. We should first establish compatibility and avoid conflicting dependencies.
+2. What the official documentation tells us
+The official VICIdial documentation lists Asterisk, MySQL/MariaDB, Apache, PHP and Perl as required components. It also provides a manual installation procedure. 
+vicidial.org
++1
+However, the available Ubuntu installation guide is very old, so it should not be treated as a validated Ubuntu 24.04 installation procedure. 
+GitHub
+I would therefore use a staged approach:
+Prepare and secure Ubuntu.
+Verify compatible versions of the VICIdial components.
+Build a test installation.
+Validate the agent interface and telephony.
+Only then consider production deployment.
+
+3. Prepare Ubuntu 24.04
+First, take a Hostinger VPS snapshot if that option is available.
+Update the operating system:
+bash
+apt update
+apt upgrade -y
+apt install -y curl wget git unzip \
+  nano vim screen htop chrony \
+  build-essential pkg-config
+Set the server hostname. Replace the example with your own domain:
+bash
+hostnamectl set-hostname pbx.yourdomain.com
+Check the hostname:
+bash
+hostnamectl
+Check time synchronization:
+bash
+timedatectl status
+Enable the time synchronization service:
+bash
+systemctl enable --now chrony
+4. Prepare your domain
+I recommend using a dedicated subdomain.
+For example:
+Purpose
+Domain
+VICIdial
+pbx.yourdomain.com
+Agent interface
+pbx.yourdomain.com
+Administrator
+pbx.yourdomain.com
+In your DNS provider, create an A record:
+text
+Type: A
+Name: pbx
+Value: YOUR_HOSTINGER_VPS_IP
+Check DNS resolution:
+bash
+getent hosts pbx.yourdomain.com
+Do not expose the administrator interface publicly without access restrictions.
+5. Verify server resources
+Run:
+bash
+free -h
+bash
+df -h
+bash
+lscpu
+bash
+lsblk
+For your 5–10 agents, I would aim for:
+At least 8 GB RAM.
+2 or more vCPUs.
+SSD storage with sufficient recording capacity.
+Reliable network connectivity.
+If your VPS has limited CPU or memory, simultaneous calls and recording may affect performance.
               </p>
 
               <div class="project-tags">
